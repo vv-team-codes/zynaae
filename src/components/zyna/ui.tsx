@@ -1,5 +1,4 @@
 import { useEffect, useRef, type ReactNode } from "react";
-import logo from "@/assets/zyna-logo.png.asset.json";
 import { cn } from "@/lib/utils";
 
 export const DEMO_URL = "#contact";
@@ -35,7 +34,15 @@ export function Eyebrow({ children, className }: { children: ReactNode; classNam
 }
 
 export function Logo({ className }: { className?: string }) {
-  return <img src={logo.url} alt="ZYNA — AI that works for you" className={cn("select-none", className)} width={1207} height={294} />;
+  return (
+    <img
+      src="/zyna-logo.png"
+      alt="ZYNA — AI that works for you"
+      className={cn("select-none", className)}
+      width={1207}
+      height={294}
+    />
+  );
 }
 
 export const btn = {
