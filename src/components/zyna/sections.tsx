@@ -521,12 +521,13 @@ export function Footer() {
         </div>
         <div>
           <p className="mb-3 text-sm font-semibold">Product</p>
-          {nav.slice(0, 4).map(([l, id]) => <a key={id} href={`#${id}`} className="block py-1 text-sm text-muted-foreground hover:text-primary">{l}</a>)}
+          {nav.slice(0, 4).map(([l, id]) => <a key={id} href={`/#${id}`} className="block py-1 text-sm text-muted-foreground hover:text-primary">{l}</a>)}
         </div>
         <div>
           <p className="mb-3 text-sm font-semibold">Company</p>
-          <a href="#faq" className="block py-1 text-sm text-muted-foreground hover:text-primary">FAQ</a>
-          <a href="#contact" className="block py-1 text-sm text-muted-foreground hover:text-primary">Contact</a>
+          <a href="/blog" className="block py-1 text-sm text-muted-foreground hover:text-primary">Blog</a>
+          <a href="/#faq" className="block py-1 text-sm text-muted-foreground hover:text-primary">FAQ</a>
+          <a href="/#contact" className="block py-1 text-sm text-muted-foreground hover:text-primary">Contact</a>
           <p className="py-1 text-sm text-muted-foreground">[email address TBC]</p>
         </div>
       </div>
